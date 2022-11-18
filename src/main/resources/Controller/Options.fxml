@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OptionsController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.5" pickOnBounds="true">
+         <viewport>
+            <Rectangle2D />
+         </viewport>
+         <image>
+            <Image url="@../Images/Title.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="191.0" layoutY="14.0" text="Options">
+         <font>
+            <Font name="System Bold" size="59.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_back" layoutX="39.0" layoutY="308.0" mnemonicParsing="false" onAction="#saveAndSwitchToTitle" text="Back">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <CheckBox fx:id="box_music" layoutX="223.0" layoutY="318.0" mnemonicParsing="false" onAction="#playSound" text="Music">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_sound" layoutX="410.0" layoutY="318.0" mnemonicParsing="false" onAction="#playSound" text="Sound">
+         <font>
+            <Font name="System Bold" size="31.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="93.0" layoutY="100.0" text="Field Size:">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="351.0" layoutY="100.0" text="Difficulty:">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="box_large" layoutX="105.0" layoutY="147.0" mnemonicParsing="false" onAction="#regulate" text="Large">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_medium" layoutX="105.0" layoutY="190.0" mnemonicParsing="false" onAction="#regulate" text="Medium">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_small" layoutX="105.0" layoutY="231.0" mnemonicParsing="false" onAction="#regulate" text="Small">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_hard" layoutX="361.0" layoutY="147.0" mnemonicParsing="false" onAction="#regulate" text="Hard">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_normal" layoutX="361.0" layoutY="190.0" mnemonicParsing="false" onAction="#regulate" text="Normal">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="box_easy" layoutX="361.0" layoutY="231.0" mnemonicParsing="false" onAction="#regulate" text="Easy">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </CheckBox>
+   </children>
+</AnchorPane>
